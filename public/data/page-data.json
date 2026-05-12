@@ -1,0 +1,142 @@
+{
+  "contactBar": {
+    "contactItems": [
+      {
+        "type": "email",
+        "label": "durgaazhagar123@gmail.com",
+        "icon": "/images/icon/mail-icon.svg",
+        "link": "mailto:durgaazhagar123@gmail.com"
+      },
+      {
+        "type": "phone",
+        "label": "+91 8072971296",
+        "icon": "/images/icon/call-icon.svg",
+        "link": "tel:+918072971296"
+      },
+      {
+        "type": "location",
+        "label": "Thirukovilur, Tamil Nadu, India",
+        "icon": "/images/icon/location-icon.svg",
+        "link": "#"
+      }
+    ],
+    "socialItems": [
+      {
+        "platform": "github",
+        "icon": "/images/icon/github-icon.svg",
+        "link": "https://github.com/durgaazhagar"
+      },
+      {
+        "platform": "linkedin",
+        "icon": "/images/icon/linkedin-icon.svg",
+        "link": "https://www.linkedin.com/in/durgaazhagar"
+      },
+      {
+        "platform": "portfolio",
+        "icon": "/images/icon/web-icon.svg",
+        "link": "https://a.durga.github.io"
+      }
+    ]
+  },
+  "educationData": {
+    "education": [
+      {
+        "title": "SKP Engineering College, Thiruvannamalai — Currently Pursuing 3rd Year",
+        "description": "Bachelor's in Computer Science and Engineering, focusing on cybersecurity, networking, and software development."
+      },
+      {
+        "title": "ASGG Higher Secondary School, Thirukovilur — HSC",
+        "description": "Completed Higher Secondary Certificate with focus on mathematics and computer science."
+      },
+      {
+        "title": "ASGG Higher Secondary School, Thirukovilur — SSLC",
+        "description": "Completed Secondary School Leaving Certificate."
+      }
+    ],
+    "skills": [
+      {
+        "name": "HTML",
+        "icon": "/images/home/education-skill/html-icon.svg",
+        "rating": 5
+      },
+      {
+        "name": "CSS",
+        "icon": "/images/home/education-skill/css-icon.svg",
+        "rating": 5
+      },
+      {
+        "name": "JavaScript",
+        "icon": "/images/home/education-skill/js-icon.svg",
+        "rating": 4
+      },
+      {
+        "name": "Python",
+        "icon": "/images/home/education-skill/python-icon.svg",
+        "rating": 4
+      },
+      {
+        "name": "Django",
+        "icon": "/images/home/education-skill/django-icon.svg",
+        "rating": 3
+      },
+      {
+        "name": "MySQL",
+        "icon": "/images/home/education-skill/mysql-icon.svg",
+        "rating": 4
+      },
+      {
+        "name": "Linux",
+        "icon": "/images/home/education-skill/linux-icon.svg",
+        "rating": 4
+      },
+      {
+        "name": "Networking",
+        "icon": "/images/home/education-skill/network-icon.svg",
+        "rating": 4
+      },
+      {
+        "name": "Cybersecurity",
+        "icon": "/images/home/education-skill/security-icon.svg",
+        "rating": 4
+      },
+      {
+        "name": "AWS",
+        "icon": "/images/home/education-skill/aws-icon.svg",
+        "rating": 3
+      }
+    ]
+  },
+  "contactLinks": {
+    "socialLinks": [
+      {
+        "title": "GitHub",
+        "href": "https://github.com/durgaazhagar"
+      },
+      {
+        "title": "LinkedIn",
+        "href": "https://www.linkedin.com/in/durgaazhagar"
+      },
+      {
+        "title": "Portfolio",
+        "href": "https://a.durga.github.io"
+      }
+    ]
+  }
+}
+        "href": "/"
+      }
+    ],
+    "contactInfo": [
+      {
+        "type": "email",
+        "label": "hello@imsruthi.com",
+        "link": "mailto:hello@imsruthi.com"
+      },
+      {
+        "type": "phone",
+        "label": "+901 5588 2500",
+        "link": "tel:+90155882500"
+      }
+    ]
+  }
+}

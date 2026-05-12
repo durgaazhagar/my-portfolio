@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(135deg, #000000 0%, #1a1a2e 50%, #16213e 100%);
+  color: white;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #00FFFF;
+  transition: height 0.3s ease;
+  z-index: 0;
+}
+
+button:hover::before {
+  height: 100%;
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+
+/* Cybersecurity glow effects */
+.cyber-glow {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.cyber-border {
+  border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.cyber-text-glow {
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+@keyframes particle-float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+.particle {
+  animation: particle-float 6s ease-in-out infinite;
+}
+
+/* Profile image glow animation */
+@keyframes profile-glow {
+  0% {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4), 0 0 40px rgba(0, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.6), 0 0 60px rgba(0, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4), 0 0 40px rgba(0, 255, 255, 0.2);
+  }
+}
+
+.profile-glow {
+  animation: profile-glow 3s ease-in-out infinite;
+}
+
+@theme {
+  --color-primary: #00FFFF;
+  --color-secondary: #868686;
+  --color-softGray: #1a1a2e;
+  --color-mistGray: #16213e;
+  --color-gray: #0f3460;
+
+  --breakpoint-xs: 425px;
+}
+
+@layer utilities {
+  .container {
+    @apply w-full max-w-[80rem] mx-auto mt-0 mb-0 py-0 sm:px-7 px-5;
+  }
+  .label {
+    @apply text-gray-300 text-sm font-normal;
+  }
+  .input {
+    @apply w-full border-b border-gray-600 focus:border-cyan-400 focus:outline-none py-2 bg-transparent text-white placeholder-gray-400;
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl md:text-5xl xl:text-7xl 2xl:text-[85px] font-semibold leading-tight text-white;
+  }
+
+  h2 {
+    @apply text-3xl md:text-5xl lg:text-6xl xl:text-[65px] font-semibold text-white;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-white;
+  }
+
+  h4 {
+    @apply text-4xl text-white;
+  }
+
+  h5 {
+    @apply text-xl xl:text-2xl text-white;
+  }
+
+  h6 {
+    @apply text-sm md:text-base xl:text-xl text-gray-300;
+  }
+
+  p {
+    @apply text-base text-secondary;
+  }
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  header, footer, .navbar, .no-print {
+    display: none !important;
+  }
+
+  main {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  * {
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+
+  html, body {
+    height: auto;
+    overflow: visible;
+  }
+
+  .hero-section{
+    padding-top: 35px;
+  }
+
+  .break-page {
+    break-before: page;
+    page-break-before: always;
+  }
+}

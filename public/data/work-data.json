@@ -1,0 +1,18 @@
+{
+  "workData": [
+    {
+      "image": "/images/work/work-img-1.jpg",
+      "title": "Web Application Security Assessment",
+      "client": "Personal Project",
+      "slug": "web-security-assessment",
+      "description": "Conducted comprehensive security assessment on a sample web application, identifying and mitigating common vulnerabilities like SQL Injection, XSS, and weak authentication."
+    },
+    {
+      "image": "/images/work/work-img-7.jpg",
+      "title": "Portfolio Project",
+      "client": "Personal Project",
+      "slug": "portfolio-project",
+      "description": "A showcase project demonstrating professional portfolio development and design skills."
+    }
+  ]
+}
